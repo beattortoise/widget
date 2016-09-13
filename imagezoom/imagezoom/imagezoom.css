@@ -1,0 +1,158 @@
+button {
+	border: 0;
+}
+.Icon {
+    background: transparent;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: baseline;
+    position: relative;
+}
+.Icon:after, .Icon:before {
+    display: block;
+    font-weight: normal;
+    text-align: center;
+}
+.modal-btn {
+    background-color: transparent;
+    cursor: pointer;
+}
+.Icon--large {
+    font-size: 21px;
+    line-height: 1;
+}
+.gallery-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	background: rgba(0,0,0,0.8);
+}
+.Gallery {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    text-align: center;
+}
+.Gallery:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.Gallery-closeTarget {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.Gallery-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 520px;
+    min-height: 338px;
+    border-radius: 7px;
+}
+.Gallery .modal-close {
+    right: -30px;
+    padding: 0;
+    height: auto;
+	position: absolute;
+	top: 9px;
+	width: 20px;
+}
+.Gallery .modal-close .Icon--close {
+    color: white;
+    font-size: 21px;
+}
+.Icon--close:before {
+    content: "X";
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.Gallery-media {
+    background: black;
+    border-radius: 6px 6px 0 0;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.GalleryNav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+	cursor: pointer;
+}
+.GalleryNav--prev {
+    left: 0;
+    width: 33%;
+}
+.GalleryNav-handle {
+    position: absolute;
+    top: 35%;
+    width: 50px;
+    height: 200px;
+    margin-top: -17px;
+    display: block;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    transition: opacity .05s ease-in-out;
+    color: white;
+    background: 0;
+    line-height: 200px;
+}
+.GalleryNav.enabled:hover .GalleryNav-handle {
+    opacity: 1;
+    -ms-filter: "alpha(opacity=100)";
+}
+.GalleryNav-handle--prev {
+    left: -50px;
+}
+.u-hiddenVisually {
+    border: 0!important;
+    clip: rect(1px,1px,1px,1px)!important;
+    font-size: 1px!important;
+    height: 1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+}
+.GalleryNav--next {
+    right: 0;
+    width: 67%;
+}
+.Icon--caretRight:before {
+    content: ">";
+}
+.Icon--caretLeft:before {
+    content: "<";
+}
+.GalleryNav-handle--next {
+    right: -50px;
+}
+.GalleryNav.enabled .GalleryNav-handle {
+    opacity: .3;
+    -ms-filter: "alpha(opacity=30)";
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="http://jquerywidget.com/public/style/cssreset-min.css">
+		<link rel="stylesheet" type="text/css" href="imagezoom.css">
+		<style type="text/css">			
+			.panel{
+				margin-bottom: 20px;
+			}
+			.zoom{
+				overflow: hidden;
+			}
+			.zoom li{
+				float: left;
+				width:300px;
+				height: 300px;
+				border:1px solid #ebebeb;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			.zeem li img {
+				width: 320px;
+				height: 320px;
+
+			}
+		</style>
+		<script src="http://static.zealer.com/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="imagezoom.js"></script>
+	</head>
+
+	<body>
+		<div class="panel">
+			<div id="zoomBox">
+				<ul class="zoom" data-open="">
+					<li>
+						<img src="http://img0.zealer.com/e8/0a/78/6ec6f2d9e1731b41c4fc126f6e.jpg?imageView2/2/w/320" />
+					</li>
+					<li>
+						<img src="http://img0.zealer.com/2b/c2/dc/0e71928da446b65e5a86583bce.jpg?imageView2/2/w/320" />
+					</li>
+					<li>
+						<img src="http://img0.zealer.com/26/ed/7f/4806d72603c3b2506798910c8b.jpg?imageView2/2/w/320" />
+					</li>
+				</ul>
+				<ul class="zoom" data-open="">
+					<li>
+						<img src="http://img0.zealer.com/8c/8b/a5/d5cdacc1c3f36b941159ca0932.jpg?imageView2/2/w/320" />
+					</li>
+					<li>
+						<img src="http://img0.zealer.com/9d/f7/23/c541859be75018f23a785690bb.jpg?imageView2/2/w/320" />
+					</li>
+					<li>
+						<img src="http://img.tuku.cn/file_big/201502/a164f532912d4d42a3b2e8688d8099cd.jpg" />
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 弹窗部分开始 -->
+		<div class="gallery-overlay">
+		</div>
+
+		<div class="Gallery">
+		  <div class="Gallery-closeTarget"></div>
+		  <div class="Gallery-content">
+			  <button type="button" class="modal-btn modal-close js-close">
+				  <span class="Icon Icon--close Icon--large">
+					<span class="visuallyhidden">关闭</span>
+				  </span>
+			   </button>
+			<div class="Gallery-media"></div>
+			<div class="GalleryNav GalleryNav--prev enabled">
+			  <span class="GalleryNav-handle GalleryNav-handle--prev">
+				<span class="Icon Icon--caretLeft Icon--large">
+				  <span class="u-hiddenVisually">
+					上一页
+				  </span>
+				</span>
+			  </span>
+			</div>
+			<div class="GalleryNav GalleryNav--next enabled">
+			  <span class="GalleryNav-handle GalleryNav-handle--next">
+				<span class="Icon Icon--caretRight Icon--large">
+				  <span class="u-hiddenVisually">
+					下一步
+				  </span>
+				</span>
+			  </span>
+			</div>
+		  </div>
+		</div>
+
+		<!-- 弹窗部分结束 -->
+
+		<script type="text/javascript">
+			$('#zoomBox').imagezoom({
+				},
+				function(api) {
+				}
+			)
+		</script>
+	</body>
+</html>
