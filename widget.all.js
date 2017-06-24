@@ -1,7 +1,7 @@
 /**
  * 弹窗组件
  * @Date   2015-05-11
- * user  wu
+ * @author  wu
  */
 // 
 
@@ -357,7 +357,7 @@ Page.prototype = {
 
 /**
  * 回到顶部组件
- * user  wu
+ * @author wu
  * @Date   2015-09-24
  */
 // 
@@ -423,7 +423,7 @@ goTop.prototype =  {
 
 /**
  * 移动端至底下滑加载更多
- * user  wu
+ * @author  wu
  * @Date   2016-05-09
  */
 // 
@@ -573,7 +573,7 @@ Calculatenum.prototype = {
 /**
  * 倒计时组件 － used: 秒杀专题页 
  * @Date   2016-09-27
- * user  wu
+ * @author wu
  */
 // 增加systemTime参数，避免拿用户本地的时间
 var Timer = function(opts) {
